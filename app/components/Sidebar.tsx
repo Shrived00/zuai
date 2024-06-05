@@ -1,6 +1,8 @@
 import Link from "next/link"
 import {
-    Home,
+    Home, Activity, Backpack, BookCheck, Clock,
+
+    Settings, UserRoundCog
 } from "lucide-react"
 
 
@@ -18,7 +20,7 @@ const Sidebar = () => {
 
     return (
 
-        <aside className="  hidden sm:w-[6rem] lg:w-[14rem] flex-col border-r bg-gray-400/10 sm:flex  min-h-screen ">
+        <aside className="  hidden sm:w-[6rem] lg:w-[14rem] flex-col border-r bg-gray-400/10 sm:flex  min-h-screen h-full ">
 
             <Link href={'/'} className="flex  items-center justify-center  w-full pt-5 pb-7 text-2xl font-semibold">
 
@@ -57,7 +59,7 @@ const Sidebar = () => {
                             className="flex  items-center  text-muted-foreground transition-colors hover:text-foreground "
                         >
                             <div className=" flex  gap-5 justify-center items-center">
-                                <Home />
+                                <Activity />
                                 <div className="hidden lg:flex">Recruitment</div>
                             </div>
                             <span className="sr-only">Recruitment</span>
@@ -72,7 +74,7 @@ const Sidebar = () => {
                             className="flex  items-center  text-muted-foreground transition-colors hover:text-foreground "
                         >
                             <div className=" flex  gap-5 justify-center items-center">
-                                <Home />
+                                <Backpack />
                                 <div className="hidden lg:flex">Dashboard</div>
                             </div>
                             <span className="sr-only">Dashboard</span>
@@ -87,7 +89,7 @@ const Sidebar = () => {
                             className="flex  items-center  text-muted-foreground transition-colors hover:text-foreground "
                         >
                             <div className=" flex  gap-5 justify-center items-center">
-                                <Home />
+                                <BookCheck />
                                 <div className="hidden lg:flex">Schedule</div>
                             </div>
                             <span className="sr-only">Schedule</span>
@@ -102,7 +104,7 @@ const Sidebar = () => {
                             className="flex  items-center  text-muted-foreground transition-colors hover:text-foreground "
                         >
                             <div className=" flex  gap-5 justify-center items-center">
-                                <Home />
+                                <Clock />
                                 <div className="hidden lg:flex">Employee</div>
                             </div>
                             <span className="sr-only">Employee</span>
@@ -115,7 +117,7 @@ const Sidebar = () => {
             <nav className="flex flex-col mx-[2rem] gap-5 mt-10 ">
 
 
-                <div className="text-[0.7rem] ">MAIN MENU</div>
+                <div className="text-[0.7rem] ">Utility</div>
 
 
 
@@ -126,7 +128,7 @@ const Sidebar = () => {
                             className="flex  items-center  text-muted-foreground transition-colors hover:text-foreground "
                         >
                             <div className=" flex  gap-5 justify-center items-center">
-                                <Home />
+                                <UserRoundCog />
                                 <div className="hidden lg:flex">Support</div>
                             </div>
                             <span className="sr-only">Support</span>
@@ -141,7 +143,7 @@ const Sidebar = () => {
                             className="flex  items-center  text-muted-foreground transition-colors hover:text-foreground "
                         >
                             <div className=" flex  gap-5 justify-center items-center">
-                                <Home />
+                                <Settings />
                                 <div className="hidden lg:flex">Setting</div>
                             </div>
                             <span className="sr-only">Setting</span>
